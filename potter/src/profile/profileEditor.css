@@ -1,0 +1,8 @@
+.preview {
+    display: none;
+}
+
+profile-editor {
+    display: flex;
+    align-items: center;
+}
