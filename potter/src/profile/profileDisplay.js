@@ -24,7 +24,7 @@ const ProfileDisplay = () => {
     return (
         <div className='profile-display'>
             <h2>User information</h2>
-            {/* <ProfileImage imageUrl={user.profileImage} altText='User Profile pic'/> */}
+            {/* chose to leave out the image option */}
             <p><strong>Name: </strong>:{profileData.username}</p>
             <p><strong>Email</strong>: {profileData.email}</p>
             <p><strong>Pswd</strong> : ****************</p>

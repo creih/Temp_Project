@@ -38,11 +38,18 @@ input[type="checkbox"] {
     border-bottom: 1px solid #ccc;
 }
 .optionalInput {
-    margin: 0 -35px;
+    width: 60%;
+    margin-left: 18%;
 }
-.form-action {
+.addchild {
+    margin: 0 -20px;
+}
+.form-actions {
     text-align: center;
     margin-top: 20px;
+}
+.form-actions button {
+    margin: 0 14%;
 }
 ul {
     list-style-type: circle;

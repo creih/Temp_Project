@@ -1,12 +1,11 @@
 // this is for the profile page editting part for the user's profile
 
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom'
-import ProfileEditor from './profileEditor';
+// import { useNavigate } from 'react-router-dom'
 import './profilePage.css';
 
 const ProfilePage = () => {
-    const navigate = useNavigate();
+    // const navigate = useNavigate();
     const [username, setUserName] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
@@ -39,17 +38,16 @@ const ProfilePage = () => {
             children,
         };
         localStorage.setItem('profileData', JSON.stringify(formData));
-        navigate('/display', {state: { formData } });
+        window.location.href = '/display';
     };
 
     return (
         <div className='profile-page'>
             <h2>User' s Profile Portal</h2>
-            <div className='profile-pic-container'>
-                <ProfileEditor />
+            <div className="profile-pic-container">
+                {/* let go of the user image or ask for help later on */}
             </div>
             <div className='form-group'>
-                
                 <input 
                     type="text"
                     placeholder='Enter your name'
@@ -113,7 +111,7 @@ const ProfilePage = () => {
             </div>
             {/* Add children names even for users with multiple children */}
             {hasChildren && (
-                <div className='form-group'>
+                <div className='form-group optionalInput'>
                     <input 
                         type="text"
                         placeholder="Child's name"
@@ -121,7 +119,7 @@ const ProfilePage = () => {
                         onChange={(e) => setChildName(e.target.value)}
                     />
                     <button
-                        className = 'optionalInput'
+                        className = 'addchild'
                         type='button'
                         onClick={addChild}
                         >
