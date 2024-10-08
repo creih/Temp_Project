@@ -1,3 +1,4 @@
+// this file only changes the avatar picture of the user and only that not the whole details
 import React, { useState } from 'react';
 import ProfileImage from './profileImage';
 import './profileEditor.css';

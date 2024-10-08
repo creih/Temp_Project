@@ -1,9 +1,12 @@
 // this is for the profile page editting part for the user's profile
+
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom'
 import ProfileEditor from './profileEditor';
 import './profilePage.css';
 
 const ProfilePage = () => {
+    const navigate = useNavigate();
     const [username, setUserName] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
@@ -26,15 +29,17 @@ const ProfilePage = () => {
     };
 
     const handleSave = () => {
-        console.log({
+        const formData = {
             username,
             email,
             password,
             isMember,
             role,
             hasChildren,
-            childName
-        });
+            children,
+        };
+        localStorage.setItem('profileData', JSON.stringify(formData));
+        navigate('/display', {state: { formData } });
     };
 
     return (
@@ -83,9 +88,9 @@ const ProfilePage = () => {
             </div>
             {isMember && (
                 <div className='form-group'>
-                    <label>Role in church </label>
                     <select
                         value={role}
+                        placeholder = 'Role in church'
                         onChange={(e) => setRole(e.target.value)}
                     >
                         <option value='admin'>Admin</option>
@@ -109,13 +114,19 @@ const ProfilePage = () => {
             {/* Add children names even for users with multiple children */}
             {hasChildren && (
                 <div className='form-group'>
-                    <label>Child's name</label>
                     <input 
                         type="text"
+                        placeholder="Child's name"
                         value={childName}
                         onChange={(e) => setChildName(e.target.value)}
                     />
-                    <button type='button' onClick={addChild}>Add</button>
+                    <button
+                        className = 'optionalInput'
+                        type='button'
+                        onClick={addChild}
+                        >
+                        Add
+                    </button>
                 </div>
             )}
             {/* displaying list of added children */}

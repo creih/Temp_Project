@@ -1,0 +1,14 @@
+body {
+    z-index: 1;
+}
+.profile-display {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    width: 40%;
+    z-index: 2;
+}
