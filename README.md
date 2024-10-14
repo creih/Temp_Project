@@ -16,5 +16,8 @@ reactjs --- html n css --- vscode
 ## Features of the app
 
 ## Authors
-eric ishim <eriscorplock@gmail.com>
+eric 
+cynthia
+Adeniran
+peter
 
