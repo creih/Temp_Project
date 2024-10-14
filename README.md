@@ -3,9 +3,9 @@
 
 
 ## Links to 
-[slides presentation](https://docs.google.com/presentation/d/1gooQWk4-7NrpdCslglNQyvHTrPSzRlYN4ydLw8UD2F4/edit?usp=sharing)
-[demo presentation](https://docs.google.com/presentation/d/1gooQWk4-7NrpdCslglNQyvHTrPSzRlYN4ydLw8UD2F4/edit?usp=sharing)
-[github repository](https://docs.google.com/presentation/d/1gooQWk4-7NrpdCslglNQyvHTrPSzRlYN4ydLw8UD2F4/edit?usp=sharing)
+[slides presentation](https://docs.google.com/presentation/d/1gooQWk4-7NrpdCslglNQyvHTrPSzRlYN4ydLw8UD2F4/edit?usp=sharing) ---
+[demo presentation](https://docs.google.com/presentation/d/1gooQWk4-7NrpdCslglNQyvHTrPSzRlYN4ydLw8UD2F4/edit?usp=sharing) ---
+[github repository](https://docs.google.com/presentation/d/1gooQWk4-7NrpdCslglNQyvHTrPSzRlYN4ydLw8UD2F4/edit?usp=sharing) ---
 
 
 ## landing page screenshot
