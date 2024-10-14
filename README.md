@@ -1,4 +1,5 @@
 
+![potter-icon](https://github.com/user-attachments/assets/bea734c8-2b41-424f-9a51-0d3bf139dc7a)
 
 # CHMS
 
